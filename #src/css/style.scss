@@ -1,0 +1,12 @@
+@import 'some';
+
+
+body{
+    background-color:orangered;
+    display: flex;
+    column-count: 2;
+}
+
+div {
+    background: url('../img/img.jpg');
+}
