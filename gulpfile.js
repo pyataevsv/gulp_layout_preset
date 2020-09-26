@@ -52,7 +52,7 @@ function browserSync(params) {
         server: {
             baseDir: './' + project_folder + '/'
         },
-        port: 3000,
+        port: 3001,
         notify: false
     })
 }
@@ -67,7 +67,7 @@ function watchFiles() {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(webphtml())
+        //.pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
